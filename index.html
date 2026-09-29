@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mrinmay Paul - Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+    body {
+      background-color: #ffffff;
+      color: #222222;
+      font-size: 11.5px;
+      line-height: 1.45;
+      padding: 28px 32px;
+    }
+    /* Header */
+    .header {
+      margin-bottom: 14px;
+    }
+    .name-title {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 4px;
+    }
+    .name-title h1 {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      color: #111827;
+    }
+    .name-title .role {
+      font-size: 15px;
+      font-weight: 600;
+      color: #4b5563;
+    }
+    .contact-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 11px;
+      color: #4b5563;
+    }
+    .contact-bar span {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .contact-bar a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Layout Split */
+    .content-grid {
+      display: grid;
+      grid-template-columns: 68% 28%;
+      column-gap: 4%;
+      margin-top: 10px;
+    }
+
+    /* Section Headings */
+    h2 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      font-weight: 700;
+      color: #111827;
+      border-bottom: 1.5px solid #111827;
+      padding-bottom: 2px;
+      margin-top: 12px;
+      margin-bottom: 8px;
+    }
+    .left-col h2:first-of-type,
+    .right-col h2:first-of-type {
+      margin-top: 0;
+    }
+
+    /* Items */
+    .job {
+      margin-bottom: 10px;
+    }
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 2px;
+    }
+    .company {
+      font-weight: 700;
+      font-size: 12px;
+      color: #111827;
+    }
+    .role-title {
+      font-weight: 600;
+      color: #374151;
+    }
+    .meta {
+      font-size: 10.5px;
+      color: #6b7280;
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 15px;
+      margin-top: 4px;
+    }
+    li {
+      margin-bottom: 3.5px;
+      text-align: justify;
+    }
+
+    /* Sidebar Blocks */
+    .skill-group {
+      margin-bottom: 8px;
+    }
+    .skill-title {
+      font-weight: 700;
+      color: #111827;
+      font-size: 11px;
+    }
+    .skill-desc {
+      color: #374151;
+      font-size: 10.5px;
+      line-height: 1.35;
+    }
+    .cert-item, .award-item {
+      margin-bottom: 6px;
+      font-size: 10.5px;
+    }
+    .cert-title {
+      font-weight: 600;
+      color: #1f2937;
+    }
+    .cert-issuer {
+      color: #6b7280;
+      font-size: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="name-title">
+      <h1>MRINMAY PAUL</h1>
+      <span class="role">Frontend Developer</span>
+    </div>
+    <div class="contact-bar">
+      <span>✉ mrinmaypaul165@gmail.com</span>
+      <span>✆ +91 8167038968</span>
+      <span>🔗 <a href="https://linkedin.com/in/mrinmay-paul-162a62231" target="_blank">linkedin.com/in/mrinmay-paul-162a62231</a></span>
+      <span>🌐 <a href="https://devmrinmay.vercel.app" target="_blank">devmrinmay.vercel.app</a></span>
+      <span>📍 New Town, Kolkata, West Bengal, India</span>
+    </div>
+  </div>
+
+  <div class="content-grid">
+    <!-- Left Main Column -->
+    <div class="left-col">
+      <h2>Professional Summary</h2>
+      <p style="text-align: justify; margin-bottom: 8px;">
+        Frontend Developer with 2 years of experience building scalable web applications using React.js, Next.js, TypeScript, JavaScript, and Tailwind CSS. Experienced in responsive design, SEO optimization, REST API integration, component-driven development, performance optimization, accessibility (WCAG), and Agile/Scrum delivery. Currently contributing to a leading global automotive manufacturer's e-commerce platform at Tech Mahindra.
+      </p>
+
+      <h2>Professional Experience</h2>
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="company">Tech Mahindra</span> &mdash; <span class="role-title">Associate Software Engineer (Frontend)</span>
+          </div>
+          <span class="meta">09/2024 &ndash; Present | Kolkata</span>
+        </div>
+        <ul>
+          <li>Developed an automotive e-commerce platform from scratch using React.js, Next.js, TypeScript, and Tailwind CSS, as part of a cross-functional Agile team for a top car manufacturer.</li>
+          <li>Built an AI-powered conversational search feature enabling natural language queries, guided Q&amp;A-style filtering, and personalized vehicle recommendations to improve vehicle discovery and user experience.</li>
+          <li>Developed 20+ reusable UI components (carousels, cards, banners, filters) using Shadcn UI, ensuring consistency and scalability across the platform.</li>
+          <li>Implemented SSR, SSG, and REST API integrations, achieving Core Web Vitals targets of LCP &lt; 1.8s, CLS &lt; 0.05, and INP &lt; 200ms.</li>
+          <li>Optimized performance through lazy loading, code splitting, and image/font optimization, reaching Lighthouse scores of 90+ for Performance and SEO, and 95+ for Accessibility.</li>
+          <li>Wrote unit and integration tests using Vitest and collaborated through code reviews, sprint planning, and Agile/Scrum ceremonies.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <div class="job-header">
+          <div>
+            <span class="company">Freelance</span> &mdash; <span class="role-title">Frontend Developer</span>
+          </div>
+          <span class="meta">01/2023 &ndash; 08/2024 | Kolkata</span>
+        </div>
+        <ul>
+          <li>Developed a corporate website for a consultancy firm using React.js, JavaScript, HTML5, and Tailwind CSS.</li>
+          <li>Built service pages, blog modules, and contact forms with validation.</li>
+        </ul>
+      </div>
+
+      <h2>Education</h2>
+      <div>
+        <div style="font-weight: 700; color: #111827;">B.Tech, Electronics &amp; Communication Engineering</div>
+        <div style="color: #374151;">Future Institute of Engineering and Management</div>
+        <div class="meta" style="display: flex; justify-content: space-between; margin-top: 2px;">
+          <span>07/2020 &ndash; 06/2024</span>
+          <span>CGPA: 8.93 / 10</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column (Sidebar) -->
+    <div class="right-col">
+      <h2>Technical Skills</h2>
+      <div class="skill-group">
+        <div class="skill-title">Frontend</div>
+        <div class="skill-desc">React.js, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS, Shadcn UI</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-title">State Management</div>
+        <div class="skill-desc">Redux</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-title">API Integration</div>
+        <div class="skill-desc">REST APIs</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-title">Performance &amp; SEO</div>
+        <div class="skill-desc">SSR, SSG, Code Splitting, Lazy Loading, Core Web Vitals, Technical SEO</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-title">Testing</div>
+        <div class="skill-desc">Vitest, Unit Testing</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-title">Tools</div>
+        <div class="skill-desc">Git, CI/CD, Figma, Agile/Scrum, SCSS</div>
+      </div>
+      <div class="skill-group">
+        <div class="skill-title">Backend Familiarity</div>
+        <div class="skill-desc">Java, MySQL, MongoDB</div>
+      </div>
+
+      <h2>Certifications</h2>
+      <div class="cert-item">
+        <div class="cert-title">Build with Gemini</div>
+        <div class="cert-issuer">Google</div>
+      </div>
+      <div class="cert-item">
+        <div class="cert-title">GitHub Copilot L1 V1</div>
+        <div class="cert-issuer">Tech Mahindra</div>
+      </div>
+
+      <h2>Awards</h2>
+      <div class="award-item">
+        <div class="cert-title">Innovator of the Month</div>
+        <div class="cert-issuer">Tech Mahindra</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
