@@ -41,27 +41,24 @@ Respond ONLY in valid raw JSON with this exact schema:
       },
     });
     const analysis = JSON.parse(response.text);
-    console.log(analysis);
     fs.unlinkSync(req.file.path);
-    const newResume=  new resumeModel(
-        {
-            user,
-            job_desc:job_desc,
-            resume_name:req.file.originalname,
-            score:String(analysis.score),
-            strengths:analysis.strengths,
-            feedback:analysis.feedback,
-            missing_skills:analysis.missing_skills
-        }
-    )
-    console.log(newResume);
+    const newResume = new resumeModel({
+      user,
+      job_desc: job_desc,
+      resume_name: req.file.originalname,
+      score: String(analysis.score),
+      strengths: analysis.strengths,
+      feedback: analysis.feedback,
+      missing_skills: analysis.missing_skills,
+    });
     await newResume.save();
     return res.status(200).json({
-        success:true,
-        data:newResume
-    })
+      success: true,
+      data: newResume,
+    });
   } catch (err) {
-    console.log(err);
-    res.status(500);
+    return res
+      .status(500)
+      .json({ success: false, message: "Failed to analyse resume" });
   }
 };
